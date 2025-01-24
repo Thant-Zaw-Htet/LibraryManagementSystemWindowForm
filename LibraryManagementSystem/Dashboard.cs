@@ -23,6 +23,8 @@ namespace LibraryManagementSystem
             displayAB();
             displayIB();
             displayRB();
+            LoadChartData();
+
         }
 
         public void refreshData()
@@ -37,6 +39,7 @@ namespace LibraryManagementSystem
             displayAB();
             displayIB();
             displayRB();
+            LoadChartData();
         }
 
         public void displayAB()
@@ -162,6 +165,123 @@ namespace LibraryManagementSystem
             displayAB();
             displayIB();
             displayRB();
+            LoadChartData();
+
+
         }
+
+        private void LoadChartData()
+        {
+            if (connect.State == ConnectionState.Closed)
+            {
+                try
+                {
+                    connect.Open();
+
+                    // SQL query to count issued books grouped by date
+                    string selectData = @"
+                SELECT 
+                    FORMAT(issue_date, 'dd/MM/yyyy') AS IssueDate, 
+                    COUNT(id) AS TotalIssues
+                FROM 
+                    issues
+                WHERE 
+                    date_delete IS NULL
+                GROUP BY 
+                    FORMAT(issue_date, 'dd/MM/yyyy')
+                ORDER BY 
+                    IssueDate";
+
+                    using (SqlCommand cmd = new SqlCommand(selectData, connect))
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        // Clear existing points in the chart before adding new data
+                        chart1.Series["Book"].Points.Clear();
+
+                        while (reader.Read())
+                        {
+                            // Retrieve issue date and total issues
+                            string issueDate = reader["IssueDate"].ToString();
+                            int totalIssues = Convert.ToInt32(reader["TotalIssues"]);
+
+                            // Add the data points to the chart
+                            chart1.Series["Book"].Points.AddXY(issueDate, totalIssues);
+                        }
+
+                        reader.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    connect.Close();
+                }
+            }
+        }
+
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            chart1.Series["Book"].Points.RemoveAt(chart1.Series["Book"].Points.Count - 1);
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (connect.State == ConnectionState.Closed)
+            {
+                try
+                {
+                    connect.Open();
+
+                    // SQL query to count issued books grouped by date
+                    string selectData = @"
+                SELECT 
+                    FORMAT(issue_date, 'dd/MM/yyyy') AS IssueDate, 
+                    COUNT(id) AS TotalIssues
+                FROM 
+                    issues
+                WHERE 
+                    date_delete IS NULL
+                GROUP BY 
+                    FORMAT(issue_date, 'dd/MM/yyyy')
+                ORDER BY 
+                    IssueDate";
+
+                    using (SqlCommand cmd = new SqlCommand(selectData, connect))
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        // Clear existing points in the chart before adding new data
+                        chart1.Series["Book"].Points.Clear();
+
+                        while (reader.Read())
+                        {
+                            // Retrieve issue date and total issues
+                            string issueDate = reader["IssueDate"].ToString();
+                            int totalIssues = Convert.ToInt32(reader["TotalIssues"]);
+
+                            // Add the data points to the chart
+                            chart1.Series["Book"].Points.AddXY(issueDate, totalIssues);
+                        }
+
+                        reader.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    connect.Close();
+                }
+            }
+        }
+
+
     }
 }
