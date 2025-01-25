@@ -75,6 +75,12 @@ namespace LibraryManagementSystem
             {
                 rForm.refreshData();
             }
+
+            IssueBooks iForm = issueBooks1 as IssueBooks;
+            if (iForm != null)
+            {
+                iForm.refreshData();
+            }
         }
 
         private void returnBooks_btn_Click(object sender, EventArgs e)
