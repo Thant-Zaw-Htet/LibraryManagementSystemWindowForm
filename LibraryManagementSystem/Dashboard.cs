@@ -18,6 +18,7 @@ namespace LibraryManagementSystem
 
         public Dashboard()
         {
+
             InitializeComponent();
 
             displayAB();
@@ -178,7 +179,6 @@ namespace LibraryManagementSystem
                 {
                     connect.Open();
 
-                    // SQL query to count issued books grouped by date
                     string selectData = @"
                 SELECT 
                     FORMAT(issue_date, 'dd/MM/yyyy') AS IssueDate, 
@@ -196,12 +196,12 @@ namespace LibraryManagementSystem
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
-                        // Clear existing points in the chart before adding new data
+           
                         chart1.Series["Book"].Points.Clear();
 
                         while (reader.Read())
                         {
-                            // Retrieve issue date and total issues
+              
                             string issueDate = reader["IssueDate"].ToString();
                             int totalIssues = Convert.ToInt32(reader["TotalIssues"]);
 
@@ -236,8 +236,6 @@ namespace LibraryManagementSystem
                 try
                 {
                     connect.Open();
-
-                    // SQL query to count issued books grouped by date
                     string selectData = @"
                 SELECT 
                     FORMAT(issue_date, 'dd/MM/yyyy') AS IssueDate, 
@@ -255,16 +253,15 @@ namespace LibraryManagementSystem
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
 
-                        // Clear existing points in the chart before adding new data
                         chart1.Series["Book"].Points.Clear();
+
+                        chart1.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+                        chart1.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
 
                         while (reader.Read())
                         {
-                            // Retrieve issue date and total issues
                             string issueDate = reader["IssueDate"].ToString();
                             int totalIssues = Convert.ToInt32(reader["TotalIssues"]);
-
-                            // Add the data points to the chart
                             chart1.Series["Book"].Points.AddXY(issueDate, totalIssues);
                         }
 
@@ -282,6 +279,9 @@ namespace LibraryManagementSystem
             }
         }
 
+        private void chart2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

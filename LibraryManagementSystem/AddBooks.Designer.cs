@@ -62,7 +62,7 @@ namespace LibraryManagementSystem
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(417, 23);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(737, 647);
             this.panel2.TabIndex = 3;
@@ -74,10 +74,10 @@ namespace LibraryManagementSystem
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SlateBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -85,7 +85,7 @@ namespace LibraryManagementSystem
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(20, 71);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -133,20 +133,20 @@ namespace LibraryManagementSystem
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.addBooks_picture);
             this.panel1.Location = new System.Drawing.Point(19, 23);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(370, 647);
             this.panel1.TabIndex = 2;
             // 
             // addBooks_importBtn
             // 
-            this.addBooks_importBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
+            this.addBooks_importBtn.BackColor = System.Drawing.Color.SlateBlue;
             this.addBooks_importBtn.FlatAppearance.BorderSize = 0;
             this.addBooks_importBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addBooks_importBtn.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBooks_importBtn.ForeColor = System.Drawing.Color.White;
             this.addBooks_importBtn.Location = new System.Drawing.Point(120, 142);
-            this.addBooks_importBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBooks_importBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addBooks_importBtn.Name = "addBooks_importBtn";
             this.addBooks_importBtn.Size = new System.Drawing.Size(133, 28);
             this.addBooks_importBtn.TabIndex = 23;
@@ -156,7 +156,7 @@ namespace LibraryManagementSystem
             // 
             // addBooks_clearBtn
             // 
-            this.addBooks_clearBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
+            this.addBooks_clearBtn.BackColor = System.Drawing.Color.SlateBlue;
             this.addBooks_clearBtn.FlatAppearance.BorderSize = 0;
             this.addBooks_clearBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkSeaGreen;
             this.addBooks_clearBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
@@ -164,7 +164,7 @@ namespace LibraryManagementSystem
             this.addBooks_clearBtn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBooks_clearBtn.ForeColor = System.Drawing.Color.White;
             this.addBooks_clearBtn.Location = new System.Drawing.Point(195, 500);
-            this.addBooks_clearBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBooks_clearBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addBooks_clearBtn.Name = "addBooks_clearBtn";
             this.addBooks_clearBtn.Size = new System.Drawing.Size(132, 42);
             this.addBooks_clearBtn.TabIndex = 22;
@@ -174,7 +174,7 @@ namespace LibraryManagementSystem
             // 
             // addBooks_deleteBtn
             // 
-            this.addBooks_deleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
+            this.addBooks_deleteBtn.BackColor = System.Drawing.Color.SlateBlue;
             this.addBooks_deleteBtn.FlatAppearance.BorderSize = 0;
             this.addBooks_deleteBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkSeaGreen;
             this.addBooks_deleteBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
@@ -182,7 +182,7 @@ namespace LibraryManagementSystem
             this.addBooks_deleteBtn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBooks_deleteBtn.ForeColor = System.Drawing.Color.White;
             this.addBooks_deleteBtn.Location = new System.Drawing.Point(36, 500);
-            this.addBooks_deleteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBooks_deleteBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addBooks_deleteBtn.Name = "addBooks_deleteBtn";
             this.addBooks_deleteBtn.Size = new System.Drawing.Size(132, 42);
             this.addBooks_deleteBtn.TabIndex = 21;
@@ -198,7 +198,7 @@ namespace LibraryManagementSystem
             "Available",
             "Not Available"});
             this.addBooks_status.Location = new System.Drawing.Point(127, 321);
-            this.addBooks_status.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBooks_status.Margin = new System.Windows.Forms.Padding(4);
             this.addBooks_status.Name = "addBooks_status";
             this.addBooks_status.Size = new System.Drawing.Size(223, 27);
             this.addBooks_status.TabIndex = 20;
@@ -218,7 +218,7 @@ namespace LibraryManagementSystem
             // addBooks_published
             // 
             this.addBooks_published.Location = new System.Drawing.Point(125, 281);
-            this.addBooks_published.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBooks_published.Margin = new System.Windows.Forms.Padding(4);
             this.addBooks_published.Name = "addBooks_published";
             this.addBooks_published.Size = new System.Drawing.Size(221, 22);
             this.addBooks_published.TabIndex = 18;
@@ -237,7 +237,7 @@ namespace LibraryManagementSystem
             // 
             // addBooks_updateBtn
             // 
-            this.addBooks_updateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
+            this.addBooks_updateBtn.BackColor = System.Drawing.Color.SlateBlue;
             this.addBooks_updateBtn.FlatAppearance.BorderSize = 0;
             this.addBooks_updateBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkSeaGreen;
             this.addBooks_updateBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
@@ -245,7 +245,7 @@ namespace LibraryManagementSystem
             this.addBooks_updateBtn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBooks_updateBtn.ForeColor = System.Drawing.Color.White;
             this.addBooks_updateBtn.Location = new System.Drawing.Point(195, 436);
-            this.addBooks_updateBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBooks_updateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addBooks_updateBtn.Name = "addBooks_updateBtn";
             this.addBooks_updateBtn.Size = new System.Drawing.Size(132, 42);
             this.addBooks_updateBtn.TabIndex = 16;
@@ -255,7 +255,7 @@ namespace LibraryManagementSystem
             // 
             // addBooks_addBtn
             // 
-            this.addBooks_addBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
+            this.addBooks_addBtn.BackColor = System.Drawing.Color.SlateBlue;
             this.addBooks_addBtn.FlatAppearance.BorderSize = 0;
             this.addBooks_addBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkSeaGreen;
             this.addBooks_addBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
@@ -263,7 +263,7 @@ namespace LibraryManagementSystem
             this.addBooks_addBtn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBooks_addBtn.ForeColor = System.Drawing.Color.White;
             this.addBooks_addBtn.Location = new System.Drawing.Point(36, 436);
-            this.addBooks_addBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBooks_addBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addBooks_addBtn.Name = "addBooks_addBtn";
             this.addBooks_addBtn.Size = new System.Drawing.Size(132, 42);
             this.addBooks_addBtn.TabIndex = 15;
@@ -275,7 +275,7 @@ namespace LibraryManagementSystem
             // 
             this.addBooks_author.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBooks_author.Location = new System.Drawing.Point(127, 230);
-            this.addBooks_author.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBooks_author.Margin = new System.Windows.Forms.Padding(4);
             this.addBooks_author.Name = "addBooks_author";
             this.addBooks_author.Size = new System.Drawing.Size(223, 26);
             this.addBooks_author.TabIndex = 12;
@@ -296,7 +296,7 @@ namespace LibraryManagementSystem
             // 
             this.addBooks_bookTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBooks_bookTitle.Location = new System.Drawing.Point(127, 183);
-            this.addBooks_bookTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBooks_bookTitle.Margin = new System.Windows.Forms.Padding(4);
             this.addBooks_bookTitle.Name = "addBooks_bookTitle";
             this.addBooks_bookTitle.Size = new System.Drawing.Size(223, 26);
             this.addBooks_bookTitle.TabIndex = 10;
@@ -317,7 +317,7 @@ namespace LibraryManagementSystem
             // 
             this.addBooks_picture.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.addBooks_picture.Location = new System.Drawing.Point(120, 22);
-            this.addBooks_picture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBooks_picture.Margin = new System.Windows.Forms.Padding(4);
             this.addBooks_picture.Name = "addBooks_picture";
             this.addBooks_picture.Size = new System.Drawing.Size(133, 123);
             this.addBooks_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -330,7 +330,7 @@ namespace LibraryManagementSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddBooks";
             this.Size = new System.Drawing.Size(1173, 695);
             this.panel2.ResumeLayout(false);

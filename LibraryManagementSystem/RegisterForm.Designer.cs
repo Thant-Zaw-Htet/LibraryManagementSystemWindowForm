@@ -52,7 +52,7 @@ namespace LibraryManagementSystem
             this.register_showPass.AutoSize = true;
             this.register_showPass.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_showPass.Location = new System.Drawing.Point(244, 448);
-            this.register_showPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.register_showPass.Margin = new System.Windows.Forms.Padding(4);
             this.register_showPass.Name = "register_showPass";
             this.register_showPass.Size = new System.Drawing.Size(148, 25);
             this.register_showPass.TabIndex = 21;
@@ -65,13 +65,13 @@ namespace LibraryManagementSystem
             this.signIn_btn.BackColor = System.Drawing.Color.SlateBlue;
             this.signIn_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signIn_btn.FlatAppearance.BorderSize = 0;
-            this.signIn_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.ForestGreen;
-            this.signIn_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
+            this.signIn_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.signIn_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.signIn_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signIn_btn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signIn_btn.ForeColor = System.Drawing.Color.White;
             this.signIn_btn.Location = new System.Drawing.Point(27, 602);
-            this.signIn_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.signIn_btn.Margin = new System.Windows.Forms.Padding(4);
             this.signIn_btn.Name = "signIn_btn";
             this.signIn_btn.Size = new System.Drawing.Size(375, 37);
             this.signIn_btn.TabIndex = 20;
@@ -95,13 +95,13 @@ namespace LibraryManagementSystem
             this.register_btn.BackColor = System.Drawing.Color.SlateBlue;
             this.register_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.register_btn.FlatAppearance.BorderSize = 0;
-            this.register_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.ForestGreen;
-            this.register_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
+            this.register_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.register_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.register_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.register_btn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_btn.ForeColor = System.Drawing.Color.White;
             this.register_btn.Location = new System.Drawing.Point(27, 505);
-            this.register_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.register_btn.Margin = new System.Windows.Forms.Padding(4);
             this.register_btn.Name = "register_btn";
             this.register_btn.Size = new System.Drawing.Size(375, 49);
             this.register_btn.TabIndex = 18;
@@ -113,7 +113,7 @@ namespace LibraryManagementSystem
             // 
             this.register_password.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_password.Location = new System.Drawing.Point(27, 404);
-            this.register_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.register_password.Margin = new System.Windows.Forms.Padding(4);
             this.register_password.Multiline = true;
             this.register_password.Name = "register_password";
             this.register_password.PasswordChar = '*';
@@ -135,7 +135,7 @@ namespace LibraryManagementSystem
             // 
             this.register_username.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_username.Location = new System.Drawing.Point(25, 330);
-            this.register_username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.register_username.Margin = new System.Windows.Forms.Padding(4);
             this.register_username.Multiline = true;
             this.register_username.Name = "register_username";
             this.register_username.Size = new System.Drawing.Size(373, 36);
@@ -169,7 +169,7 @@ namespace LibraryManagementSystem
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(427, 43);
             this.panel1.TabIndex = 11;
@@ -192,7 +192,7 @@ namespace LibraryManagementSystem
             // 
             this.register_email.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_email.Location = new System.Drawing.Point(25, 258);
-            this.register_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.register_email.Margin = new System.Windows.Forms.Padding(4);
             this.register_email.Multiline = true;
             this.register_email.Name = "register_email";
             this.register_email.Size = new System.Drawing.Size(373, 36);
@@ -240,7 +240,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";

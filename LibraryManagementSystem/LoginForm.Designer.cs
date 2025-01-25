@@ -51,7 +51,7 @@ namespace LibraryManagementSystem
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(427, 43);
             this.panel1.TabIndex = 0;
@@ -96,7 +96,7 @@ namespace LibraryManagementSystem
             // 
             this.login_username.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_username.Location = new System.Drawing.Point(27, 293);
-            this.login_username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.login_username.Margin = new System.Windows.Forms.Padding(4);
             this.login_username.Multiline = true;
             this.login_username.Name = "login_username";
             this.login_username.Size = new System.Drawing.Size(373, 36);
@@ -106,7 +106,7 @@ namespace LibraryManagementSystem
             // 
             this.login_password.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_password.Location = new System.Drawing.Point(27, 378);
-            this.login_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.login_password.Margin = new System.Windows.Forms.Padding(4);
             this.login_password.Multiline = true;
             this.login_password.Name = "login_password";
             this.login_password.PasswordChar = '*';
@@ -129,13 +129,13 @@ namespace LibraryManagementSystem
             this.loginBtn.BackColor = System.Drawing.Color.SlateBlue;
             this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginBtn.FlatAppearance.BorderSize = 0;
-            this.loginBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.ForestGreen;
-            this.loginBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
+            this.loginBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.loginBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.White;
             this.loginBtn.Location = new System.Drawing.Point(27, 468);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(375, 49);
             this.loginBtn.TabIndex = 7;
@@ -159,13 +159,13 @@ namespace LibraryManagementSystem
             this.signupBtn.BackColor = System.Drawing.Color.SlateBlue;
             this.signupBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signupBtn.FlatAppearance.BorderSize = 0;
-            this.signupBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.ForestGreen;
-            this.signupBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
+            this.signupBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.signupBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.signupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signupBtn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupBtn.ForeColor = System.Drawing.Color.White;
             this.signupBtn.Location = new System.Drawing.Point(27, 594);
-            this.signupBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.signupBtn.Margin = new System.Windows.Forms.Padding(4);
             this.signupBtn.Name = "signupBtn";
             this.signupBtn.Size = new System.Drawing.Size(375, 37);
             this.signupBtn.TabIndex = 9;
@@ -178,7 +178,7 @@ namespace LibraryManagementSystem
             this.login_showPass.AutoSize = true;
             this.login_showPass.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_showPass.Location = new System.Drawing.Point(244, 422);
-            this.login_showPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.login_showPass.Margin = new System.Windows.Forms.Padding(4);
             this.login_showPass.Name = "login_showPass";
             this.login_showPass.Size = new System.Drawing.Size(148, 25);
             this.login_showPass.TabIndex = 10;
@@ -215,7 +215,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
