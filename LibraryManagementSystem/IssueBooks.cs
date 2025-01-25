@@ -208,7 +208,7 @@ namespace LibraryManagementSystem
             }
             
         }
-
+   
         private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex != -1)

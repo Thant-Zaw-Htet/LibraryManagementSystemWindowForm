@@ -57,6 +57,7 @@ namespace LibraryManagementSystem
 
         private void addBooks_addBtn_Click(object sender, EventArgs e)
         {
+
             if(addBooks_picture.Image == null
                 || addBooks_bookTitle.Text == ""
                 || addBooks_author.Text == ""

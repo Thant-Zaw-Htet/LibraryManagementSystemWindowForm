@@ -60,7 +60,7 @@ namespace LibraryManagementSystem
                             }
                             else
                             {
-                                // TO GET THE DATE TODAY
+                           
                                 DateTime day = DateTime.Today;
 
                                 String insertData = "INSERT INTO users (email, username, password, date_register) " +
